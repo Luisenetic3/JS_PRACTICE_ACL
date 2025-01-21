@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampling this exercise for a sample</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            background-image: url(skull.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .grid-item {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 1 30%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-image">
+        
+    </div>
+
+    <div class="container">
+        <p id="mogus"></p>
+        <script>
+            document.write("<h1>Compute the following given a=100 b-10</h1>");
+        </script>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <h1>Computation for 1 to the power of 10</h1>
+            <script>
+                var a, b, ExpResult;
+                a = 100;
+                b = -10;
+                ExpResult = a ** b;
+            </script>
+            <p id="brrr"></p>
+            <button type="button" onclick="document.getElementById('brrr').innerHTML = 'Exponent Answer is:' + ExpResult;">The Answer</button>
+        </div>
+
+        <div class="grid-item">
+            <h1>Is A greater than B?</h1>
+            <script>
+                var a, b, ExpResult1;
+                a = 100;
+                b = -10;
+                ExpResult1 = a > b;
+            </script>
+            <p id="tew"></p>
+            <button type="button" onclick="document.getElementById('tew').innerHTML = ExpResult1;">The Answer</button>
+        </div>
+
+        <div class="grid-item">
+            <h1>Is this statement correct? (a <= b) && (a >= b)?</h1>
+            <script>
+                var a, b, ExpResult2;
+                a = 100;
+                b = -10;
+                x = a <= b;
+                y = a >= b;
+            </script>
+            <p id="tree"></p>
+            <p id="por"></p>
+            <button type="button" onclick="document.getElementById('tree').innerHTML = (x && y);">The Answer</button>
+            <button type="button" onclick="document.getElementById('por').innerHTML = (a <= b && a >= b);">The Answer</button>
+        </div>
+    </div>
+</body>
+</html>
